@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8"/>
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <title></title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+
+    <!--[if lte IE 6]>
+    <link rel="stylesheet" href="style_ie.css" type="text/css" media="screen, projection"/><![endif]-->
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src='js/jquery.kwicks.js' type='text/javascript'></script>
+    <script src="js/main.js"></script>
+
+
+    <!--<script src="js/bootstrap-editable-inline.js"></script>-->
+    <!--<link href="css/bootstrap-editable.css" rel="stylesheet" type="text/css">-->
+    <!--<link rel="stylesheet" type="text/css" href="http://x-editable.demopage.ru/js/google-code-prettify/prettify.css">-->
+    <!--<script type="text/javascript" async="" src="http://mc.yandex.ru/metrika/watch.js"></script>-->
+
+    <!--<script type="text/javascript" src="http://x-editable.demopage.ru/js/google-code-prettify/prettify.js"></script>-->
+    <!--<script type="text/javascript"-->
+    <!--src="http://x-editable.demopage.ru/assets/c9e45511/gridview/jquery.yiigridview.js"></script>-->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection"/>
+</head>
+
+<body id="pageAll">
+
+<div id="wrapper">
+
+<header id="header">
+    <div class="container">
+        <div id="fixedBox" class="row-fluid">
+            <div class="span12">
+                <div class="navbar">
+                    <div>
+                        <div class="container">
+                            <div class="nav-collapse navbar-inner">
+                                <table id="yw0" class="table table-nav">
+                                    <tbody>
+                                    <tr>
+                                        <td ><a href="DetailsOfProvider.html">Реквизиты провайдера</a></td>
+                                        <td class="active" ><a href="requisitesUnits.html">Реквизиты подразделения</a></td>
+                                        <td><a href="priceList.html">Прайс-лист подразделения</a></td>
+                                        <td><a href="#">Заявки пациентов</a></td>
+                                        <td><a href="regiser_user.html">Данные пользователя</a></td>
+                                        <td><a href="#">Отчеты</a></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <!--<ul id="yw0" class="nav pull-right">-->
+                                <!--<li><a href="#">Реквизиты провайдера</a></li>-->
+                                <!--<li class="active"><a href="#">Реквизиты подразделения</a></li>-->
+                                <!--<li><a href="#">Прайс-лист подразделения</a></li>-->
+                                <!--<li><a href="#">Заявки пациентов</a></li>-->
+                                <!--<li><a href="#">Данные пользователя</a></li>-->
+                                <!--<li><a href="#">Отчеты</a></li>-->
+                                <!--</ul>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="span5">
+                <div class="logo-header">
+                    <a href="#">
+                        Medcomprice <i>биржа медицинских услуг</i>
+                    </a>
+                </div>
+                <!-- #Лого-->
+            </div>
+            <div class="span3 offset4 text-ag">
+                <div class="row-fluid exit">
+                    <div class="span12">
+                        <a id="exit" href="/">Выйти</a><br/>
+                    <p style="margin: 10px 0 0 0; display: inline-block" >Генадий А. М.</p></div>
+                </div>
+                <!-- #сылка-->
+                <!--<div class="row-fluid soc-link">-->
+                    <!--<div class="span12">-->
+
+                        <!--<a href="#">-->
+                            <!--<img src="img/Twitter.png" alt="" title="">-->
+                        <!--</a>-->
+                        <!--<a href="#">-->
+                            <!--<img src="img/google.png" alt="" title="">-->
+                        <!--</a>-->
+                        <!--<a href="#">-->
+                            <!--<img src="img/Facebook.png" alt="" title="">-->
+                        <!--</a>-->
+
+                    <!--</div>-->
+                <!--</div>-->
+                <!-- #Кнопки соц-ситей-->
+
+            </div>
+        </div>
+
+        <!-- #Кнопки регистрации-->
+    </div>
+</header>
+<!-- #header-->
+
+<section id="middle">
+
+<div class="container">
+<div class="row-fluid">
+    <div class="span12 price-list re-u bs-docs-example">
+<div class="row-fluid">
+<div class="span3" >
+    <div class="row-fluid" >
+         <div style="width: 261px" id="fixed">
+             <h4 class="title-h3">Список подразделений</h4>
+
+             <div class="row-fluid">
+                 <div class="span12 listOfEmployees" >
+                     <div class="tables-cont">
+                         <table class="items table table-condensed">
+                             <thead>
+                             <tr>
+                                 <th rowspan="1"></th>
+                                 <th>Уведом- ления</th>
+                                 <th>Название подразделения</th>
+                             </tr>
+                             </thead>
+                             <tbody>
+                             <tr class="selected">
+                                 <td width="10%">
+
+                                     <a class="delete_user" data-id="674" href="#" rel="tooltip" data-placement="left" data-original-title="Удалить">
+                                         <i class="ic-close"></i>
+                                     </a>
+
+                                 </td>
+                                 <td width="10%">
+                                     <a data-id="674" class="edit_user" onclick="{return false;}" href="#">
+                                         <i class="ic-erros"></i>
+                                     </a>
+                                 </td>
+                                 <td width="80%">Администрация</td>
+                             </tr>
+                             <tr>
+                                 <td width="10%">
+                                     <a class="delete_user" data-id="674" href="#" rel="tooltip" data-placement="left" data-original-title="Удалить">
+                                         <i class="ic-close"></i>
+                                     </a>
+
+                                 </td>
+                                 <td width="10%">
+
+                                 </td>
+                                 <td width="80%">Клиника на Осокорках</td>
+                             </tr>
+                             <tr>
+                                 <td width="10%">
+                                     <a class="delete_user" data-id="674" href="#" rel="tooltip" data-placement="left" data-original-title="Удалить">
+                                         <i class="ic-close"></i>
+                                     </a>
+
+                                 </td>
+                                 <td width="10%">
+
+                                 </td>
+                                 <td width="80%">Клиника на Подоле</td>
+                             </tr>
+                             </tbody>
+                         </table>
+                     </div>
+                 </div>
+             </div>
+             <div class="row-fluid">
+                 <div class="span12">
+                     <a id="create_dep_button" class="btn text-submit class-margins btn-small btn-block" href="/provider/createdep/1">Добавить новое подразделение</a>
+                     <a id="clone_dep" data-toggle="modal" class="btn text-submit class-margins btn-small btn-block" href="/provider/clonedep">Дублировать подразделение</a>
+                 </div>
+             </div>
+
+
+         </div>
+    </div>
+
+
+</div>
+<div class="span9 all-block-u">
+<div class="row-fluid">
+    <div class="span12 requisites-units">
+        <h4 class="title-h3">Реквизиты подразделения</h4>
+        <table class="table table-condensed units-t-address">
+            <tbody>
+            <tr rowspan="2">
+                <td><i class="vopros" rel="tooltip" data-placement="left" data-original-title="Юридическое название"></i>Юридическое название</td>
+                <td><a href="#" class="editable editable-click">ООО “Медицинский центр ”Мать и дитя”</a></td>
+            </tr>
+            <tr>
+                <td style="color: #7a7b7f"><i class="vopros" rel="tooltip" data-placement="left" data-original-title="Код государственной регистрации"></i>Код государственной регистрации</td>
+                <td><a href="#" class="editable editable-click">добавить код</a></td>
+            </tr>
+            <tr class="error_tab">
+                <td><i class="vopros" rel="tooltip" data-placement="left" data-original-title="Названия, которое будет отображаться для пациентов"></i>Названия, которое будет отображаться для пациентов</td>
+                <td><a href="#" class="editable editable-click" rel="tooltip" data-placement="right" data-original-title="Введите названия клиники которое будет отображаться для клиентов">добавить код</a></td>
+            </tr>
+            <tr>
+                <td><i class="vopros"></i>Краткое название
+                    подразделения
+                    для служебных целей
+                    системы Medcomprice
+                </td>
+                <td><a href="#" class="editable editable-click">Администрация</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="row-fluid block-actual-address">
+    <div class="span3">
+        <i class="vopros"></i>Фактический адрес<a id="" class="btn btn-small text-submit class-margin" href="#">Скопировать
+        адрес провайдера</a>
+    </div>
+    <div class="span9">
+        <table class="table table-condensed units-t-address">
+            <tbody>
+            <tr>
+                <td>Страна</td>
+                <td>
+                    <a href="#" class="editable editable-click">добавить</a>
+
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Область</td>
+                <td><a href="#" class="editable editable-click">Киевская</a></td>
+                <td>Город</td>
+                <td><a href="#" class="editable editable-click">Киев</a></td>
+            </tr>
+            <tr>
+                <td>Район области</td>
+                <td>
+                    <a href="#" class="editable editable-click">Киевский</a>
+                </td>
+                <td>Улица</td>
+                <td>
+                    <a href="#" class="editable editable-click">добавить</a>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Индекс</td>
+                <td><a href="#" class="editable editable-click">123456</a></td>
+                <td>Дом/офис</td>
+                <td><a href="#" class="editable editable-click">добавить</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="row-fluid block-communication">
+    <div class="span3"><i class="vopros"></i>Способы связи</div>
+    <div class="span9">
+        <div class="tables-cont" style="width: 280px;">
+            <table class="items table table-condensed">
+                <thead>
+                <tr>
+                    <th rowspan="1"></th>
+                    <th>Тип связи</th>
+                    <th>Номер/адрес</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="selected">
+                    <td width="10%">
+                        <a class="delete_user" data-id="674" href="#">
+                            <i class="ic-close"></i>
+                        </a>
+
+                    </td>
+                    <td width="40%">
+                        Телефон
+                    </td>
+                    <td width="50%">+38 044 555 22 33</td>
+                </tr>
+                <tr>
+                    <td width="10%">
+                        <a class="delete_user" data-id="674" href="#">
+                            <i class="ic-close"></i>
+                        </a>
+
+                    </td>
+                    <td width="40%">
+                        Факс
+
+                    </td>
+                    <td width="50%">+38 044 555 22 33</td>
+                </tr>
+                <tr>
+                    <td width="10%">
+                        <a class="delete_user" data-id="674" href="#">
+                            <i class="ic-close"></i>
+                        </a>
+
+                    </td>
+                    <td width="40%">
+                        E-mail
+                    </td>
+                    <td width="50%">clinica@mama.com</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <a data-toggle="modal" class="btn btn-small text-submit class-margin" href="#addContactDialog">Добавить способ
+            связи</a>
+    </div>
+
+</div>
+<div class="row-fluid block-office-staff">
+    <div class="span3"><i class="vopros"></i>Сотрудники подразделения</div>
+    <div class="span9 listOfEmployees">
+
+
+        <input class="input-large span11" id="userautocomplete" data-link="#" data-target="#"
+               placeholder="Ведите имя пользователя" name="user_query" type="text">
+
+        <div class="tables-cont st-p">
+
+            <table class="items table table-condensed">
+                <thead>
+                <tr>
+                    <th rowspan="2"></th>
+                    <th>ФИО сотрудника</th>
+                    <th>Менеджер организации</th>
+                    <th>Администратор</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="selected">
+
+                    <td width="80px">
+                        <a class="delete_user" data-id="674" href="#">
+                            <i class="ic-close"></i>
+                        </a>
+                        <a data-id="674" class="edit_user" onclick="{return false;}" href="#">
+                            <i class="ic-edit"></i>
+                        </a>
+                    </td>
+                    <td width="250px">Иванов Иван Иванович</td>
+                    <td style="text-align: center">
+                        <a style="cursor: pointer; text-decoration: underline;" class="changeurole" href="#">
+                            <span class="btn btn-mini label-noClick">Назначить</span>
+                        </a>
+                    </td>
+                    <td style="text-align: center">
+                        <a style="cursor: pointer; text-decoration: underline;" class="changeurole" href="#">
+                            <span class="btn btn-mini label-click">Снять</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td width="80px">
+                        <a class="delete_user" data-id="674" href="#">
+                            <i class="ic-close"></i>
+                        </a>
+                        <a data-id="674" class="edit_user" onclick="{return false;}" href="#">
+                            <i class="ic-edit"></i>
+                        </a>
+                    </td>
+                    <td width="250px">Иванов Иван Иванович</td>
+                    <td style="text-align: center">
+                        <a style="cursor: pointer; text-decoration: underline;" class="changeurole" href="#">
+                            <span class="btn btn-mini label-noClick">Назначить</span>
+                        </a>
+                    </td>
+                    <td style="text-align: center">
+                        <a style="cursor: pointer; text-decoration: underline;" class="changeurole" href="#">
+                            <span class="btn btn-mini label-click">Снять</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td width="80px">
+                        <a class="delete_user" data-id="674" href="#">
+                            <i class="ic-close"></i>
+                        </a>
+                        <a data-id="674" class="edit_user" onclick="{return false;}" href="#">
+                            <i class="ic-edit"></i>
+                        </a>
+                    </td>
+                    <td width="250px">Иванов Иван Иванович</td>
+                    <td style="text-align: center">
+                        <a style="cursor: pointer; text-decoration: underline;" class="changeurole" href="#">
+                            <span class="btn btn-mini label-noClick">Назначить</span>
+                        </a>
+                    </td>
+                    <td style="text-align: center">
+                        <a style="cursor: pointer; text-decoration: underline;" class="changeurole" href="#">
+                            <span class="btn btn-mini label-click">Снять</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td width="80px">
+                        <a class="delete_user" data-id="674" href="#">
+                            <i class="ic-close"></i>
+                        </a>
+                        <a data-id="674" class="edit_user" onclick="{return false;}" href="#">
+                            <i class="ic-edit"></i>
+                        </a>
+                    </td>
+                    <td width="250px">Иванов Иван Иванович</td>
+                    <td style="text-align: center">
+                        <a style="cursor: pointer; text-decoration: underline;" class="changeurole" href="#">
+                            <span class="btn btn-mini label-noClick">Назначить</span>
+                        </a>
+                    </td>
+                    <td style="text-align: center">
+                        <a style="cursor: pointer; text-decoration: underline;" class="changeurole" href="#">
+                            <span class="btn btn-mini label-click">Снять</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td width="80px">
+                        <a class="delete_user" data-id="674" href="#">
+                            <i class="ic-close"></i>
+                        </a>
+                        <a data-id="674" class="edit_user" onclick="{return false;}" href="#">
+                            <i class="ic-edit"></i>
+                        </a>
+                    </td>
+                    <td width="250px">Иванов Иван Иванович</td>
+                    <td style="text-align: center">
+                        <a style="cursor: pointer; text-decoration: underline;" class="changeurole" href="#">
+                            <span class="btn btn-mini label-noClick">Назначить</span>
+                        </a>
+                    </td>
+                    <td style="text-align: center">
+                        <a style="cursor: pointer; text-decoration: underline;" class="changeurole" href="#">
+                            <span class="btn btn-mini label-click">Снять</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td width="80px">
+                        <a class="delete_user" data-id="674" href="#">
+                            <i class="ic-close"></i>
+                        </a>
+                        <a data-id="674" class="edit_user" onclick="{return false;}" href="#">
+                            <i class="ic-edit"></i>
+                        </a>
+                    </td>
+                    <td width="250px">Иванов Иван Иванович</td>
+                    <td style="text-align: center">
+                        <a style="cursor: pointer; text-decoration: underline;" class="changeurole" href="#">
+                            <span class="btn btn-mini label-noClick">Назначить</span>
+                        </a>
+                    </td>
+                    <td style="text-align: center">
+                        <a style="cursor: pointer; text-decoration: underline;" class="changeurole" href="#">
+                            <span class="btn btn-mini label-click">Снять</span>
+                        </a>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <a data-toggle="modal" class="btn btn-small text-submit class-margin" href="#addContactDialog">Добавить нового
+            сотрудника</a>
+    </div>
+
+
+</div>
+<div class="row-fluid block-standard-schedule">
+    <div class="span3"><i class="vopros"></i>Страндартный график работы</div>
+    <div class="span9">
+
+        <form class="time_form">
+            <div class="row-fluid">
+                <table class="table">
+                    <tr>
+                        <td>понедельник-пятница с</td>
+                        <td>
+                            <div class="pull-right input-append bootstrap-timepicker"><span class="time-add-on">по</span><input
+                                id="time_mon_fri_end" type="text" name="time_mon_fri_end" class="input-mini"><span
+                                class="add-on"><i class="icon-time"></i></span>
+
+                            <div class="bootstrap-timepicker-widget dropdown-menu">
+                                <table>
+                                    <tbody>
+                                    <tr>
+                                        <td><a href="#" data-action="incrementHour"><i class="icon-chevron-up"></i></a></td>
+                                        <td class="separator">&nbsp;</td>
+                                        <td><a href="#" data-action="incrementMinute"><i class="icon-chevron-up"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="hour" class="bootstrap-timepicker-hour" maxlength="2"></td>
+                                        <td class="separator">:</td>
+                                        <td><input type="text" name="minute" class="bootstrap-timepicker-minute" maxlength="2">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#" data-action="decrementHour"><i class="icon-chevron-down"></i></a></td>
+                                        <td class="separator"></td>
+                                        <td><a href="#" data-action="decrementMinute"><i class="icon-chevron-down"></i></a></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        </td>
+                        <td>по</td>
+                        <td>
+                            <div class="pull-right input-append bootstrap-timepicker"><span class="time-add-on prep">понедельник-пятница c</span><input
+                                    id="time_mon_fri_start" type="text" name="time_mon_fri_start" class="input-mini"><span
+                                    class="add-on"><i class="icon-time"></i></span>
+
+                                <div class="bootstrap-timepicker-widget dropdown-menu">
+                                    <table>
+                                        <tbody>
+                                        <tr>
+                                            <td><a href="#" data-action="incrementHour"><i class="icon-chevron-up"></i></a></td>
+                                            <td class="separator">&nbsp;</td>
+                                            <td><a href="#" data-action="incrementMinute"><i class="icon-chevron-up"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name="hour" class="bootstrap-timepicker-hour" maxlength="2"></td>
+                                            <td class="separator">:</td>
+                                            <td><input type="text" name="minute" class="bootstrap-timepicker-minute" maxlength="2">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#" data-action="decrementHour"><i class="icon-chevron-down"></i></a></td>
+                                            <td class="separator"></td>
+                                            <td><a href="#" data-action="decrementMinute"><i class="icon-chevron-down"></i></a></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <div class="row-fluid">
+                <table class="table">
+                    <tr>
+                        <td>суббота с</td>
+                        <td>
+                            <div class="pull-right input-append bootstrap-timepicker"><span class="time-add-on">по</span><input
+                                    id="time_mon_fri_end" type="text" name="time_mon_fri_end" class="input-mini"><span
+                                    class="add-on"><i class="icon-time"></i></span>
+
+                                <div class="bootstrap-timepicker-widget dropdown-menu">
+                                    <table>
+                                        <tbody>
+                                        <tr>
+                                            <td><a href="#" data-action="incrementHour"><i class="icon-chevron-up"></i></a></td>
+                                            <td class="separator">&nbsp;</td>
+                                            <td><a href="#" data-action="incrementMinute"><i class="icon-chevron-up"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name="hour" class="bootstrap-timepicker-hour" maxlength="2"></td>
+                                            <td class="separator">:</td>
+                                            <td><input type="text" name="minute" class="bootstrap-timepicker-minute" maxlength="2">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#" data-action="decrementHour"><i class="icon-chevron-down"></i></a></td>
+                                            <td class="separator"></td>
+                                            <td><a href="#" data-action="decrementMinute"><i class="icon-chevron-down"></i></a></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </td>
+                        <td>по</td>
+                        <td>
+                            <div class="pull-right input-append bootstrap-timepicker"><span class="time-add-on prep">понедельник-пятница c</span><input
+                                    id="time_mon_fri_start" type="text" name="time_mon_fri_start" class="input-mini"><span
+                                    class="add-on"><i class="icon-time"></i></span>
+
+                                <div class="bootstrap-timepicker-widget dropdown-menu">
+                                    <table>
+                                        <tbody>
+                                        <tr>
+                                            <td><a href="#" data-action="incrementHour"><i class="icon-chevron-up"></i></a></td>
+                                            <td class="separator">&nbsp;</td>
+                                            <td><a href="#" data-action="incrementMinute"><i class="icon-chevron-up"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name="hour" class="bootstrap-timepicker-hour" maxlength="2"></td>
+                                            <td class="separator">:</td>
+                                            <td><input type="text" name="minute" class="bootstrap-timepicker-minute" maxlength="2">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#" data-action="decrementHour"><i class="icon-chevron-down"></i></a></td>
+                                            <td class="separator"></td>
+                                            <td><a href="#" data-action="decrementMinute"><i class="icon-chevron-down"></i></a></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <div class="row-fluid">
+                <table class="table">
+                    <tr>
+                        <td>воскресенье с </td>
+                        <td>
+                            <div class="pull-right input-append bootstrap-timepicker"><span class="time-add-on">по</span><input
+                                    id="time_mon_fri_end" type="text" name="time_mon_fri_end" class="input-mini"><span
+                                    class="add-on"><i class="icon-time"></i></span>
+
+                                <div class="bootstrap-timepicker-widget dropdown-menu">
+                                    <table>
+                                        <tbody>
+                                        <tr>
+                                            <td><a href="#" data-action="incrementHour"><i class="icon-chevron-up"></i></a></td>
+                                            <td class="separator">&nbsp;</td>
+                                            <td><a href="#" data-action="incrementMinute"><i class="icon-chevron-up"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name="hour" class="bootstrap-timepicker-hour" maxlength="2"></td>
+                                            <td class="separator">:</td>
+                                            <td><input type="text" name="minute" class="bootstrap-timepicker-minute" maxlength="2">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#" data-action="decrementHour"><i class="icon-chevron-down"></i></a></td>
+                                            <td class="separator"></td>
+                                            <td><a href="#" data-action="decrementMinute"><i class="icon-chevron-down"></i></a></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </td>
+                        <td>по</td>
+                        <td>
+                            <div class="pull-right input-append bootstrap-timepicker"><span class="time-add-on prep">понедельник-пятница c</span><input
+                                    id="time_mon_fri_start" type="text" name="time_mon_fri_start" class="input-mini"><span
+                                    class="add-on"><i class="icon-time"></i></span>
+
+                                <div class="bootstrap-timepicker-widget dropdown-menu">
+                                    <table>
+                                        <tbody>
+                                        <tr>
+                                            <td><a href="#" data-action="incrementHour"><i class="icon-chevron-up"></i></a></td>
+                                            <td class="separator">&nbsp;</td>
+                                            <td><a href="#" data-action="incrementMinute"><i class="icon-chevron-up"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name="hour" class="bootstrap-timepicker-hour" maxlength="2"></td>
+                                            <td class="separator">:</td>
+                                            <td><input type="text" name="minute" class="bootstrap-timepicker-minute" maxlength="2">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#" data-action="decrementHour"><i class="icon-chevron-down"></i></a></td>
+                                            <td class="separator"></td>
+                                            <td><a href="#" data-action="decrementMinute"><i class="icon-chevron-down"></i></a></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <div class="row-fluid">
+                <table class="table">
+                    <tr>
+                        <td>выходные и праздники с</td>
+                        <td>
+                            <div class="pull-right input-append bootstrap-timepicker"><span class="time-add-on">по</span><input
+                                    id="time_mon_fri_end" type="text" name="time_mon_fri_end" class="input-mini"><span
+                                    class="add-on"><i class="icon-time"></i></span>
+
+                                <div class="bootstrap-timepicker-widget dropdown-menu">
+                                    <table>
+                                        <tbody>
+                                        <tr>
+                                            <td><a href="#" data-action="incrementHour"><i class="icon-chevron-up"></i></a></td>
+                                            <td class="separator">&nbsp;</td>
+                                            <td><a href="#" data-action="incrementMinute"><i class="icon-chevron-up"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name="hour" class="bootstrap-timepicker-hour" maxlength="2"></td>
+                                            <td class="separator">:</td>
+                                            <td><input type="text" name="minute" class="bootstrap-timepicker-minute" maxlength="2">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#" data-action="decrementHour"><i class="icon-chevron-down"></i></a></td>
+                                            <td class="separator"></td>
+                                            <td><a href="#" data-action="decrementMinute"><i class="icon-chevron-down"></i></a></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </td>
+                        <td>по</td>
+                        <td>
+                            <div class="pull-right input-append bootstrap-timepicker"><span class="time-add-on prep">понедельник-пятница c</span><input
+                                    id="time_mon_fri_start" type="text" name="time_mon_fri_start" class="input-mini"><span
+                                    class="add-on"><i class="icon-time"></i></span>
+
+                                <div class="bootstrap-timepicker-widget dropdown-menu">
+                                    <table>
+                                        <tbody>
+                                        <tr>
+                                            <td><a href="#" data-action="incrementHour"><i class="icon-chevron-up"></i></a></td>
+                                            <td class="separator">&nbsp;</td>
+                                            <td><a href="#" data-action="incrementMinute"><i class="icon-chevron-up"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name="hour" class="bootstrap-timepicker-hour" maxlength="2"></td>
+                                            <td class="separator">:</td>
+                                            <td><input type="text" name="minute" class="bootstrap-timepicker-minute" maxlength="2">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#" data-action="decrementHour"><i class="icon-chevron-down"></i></a></td>
+                                            <td class="separator"></td>
+                                            <td><a href="#" data-action="decrementMinute"><i class="icon-chevron-down"></i></a></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="row-fluid pull-right">
+            <a data-toggle="modal" class="btn btn-small text-submit class-margin" href="#addContactDialog">Сохранить</a>       </div>
+        </form>
+
+    </div>
+</div>
+<div class="row-fluid block-brief-description">
+    <div class="span3"><i class="vopros"></i>Краткое описание клиники</div>
+    <div class="span9">
+
+        <div id="description-edit" style="display: none;">
+            <textarea class="span12" rows="4" data-url="" data-pk="680" name="description" id="description"></textarea>
+            <a id="update_desc" class="btn btn-small text-submit btn-small">
+                <i class="icon-ok"></i> Сохранить</a>
+            <a class="edit_desc btn btn-small btn-small text-submit">Отменить</a>
+        </div>
+
+        <div id="description-view" style="">
+            <p>Украинская сеть клиник «Мать и дитя» входит в одноимённую международную группу компаний, которая объединяет 12 медицинских центров в Украине и России. Клиники «Мать и дитя» специализируются на вспомогательных репродуктивных технологиях, акушерстве и гинекологии. В условиях психологического комфорта и конфиденциальности врачи клиник ежегодно помогают сотням пар стать счастливыми родителями.
+                В клиниках работают врачи высшей квалификационной категории, кандидаты медицинских наук, доктора наук, большинство из которых являются членами Европейского общества репродукции и эмбриологии человека (ESHRE) и Украинской ассоциации репродуктивной медицины (УАРМ).</p>
+            <a class="edit_desc btn btn-small text-submit">
+                <i class="ic-edit icon-white"></i> Редактировать</a>
+        </div>
+
+    </div>
+</div>
+<div class="row-fluid block-patient-traded">
+    <div class="span3"><i class="vopros"></i>Пациент может торговаться по цене
+    <p style="margin: 70px 0 0 0; color: #718189">Рейтинг подразделения:</p>
+    </div>
+    <div class="span2">
+
+        <label class="checkbox">
+           <input class="ajax_update" data-url="/provider/depupdate" data-pk="680" type="checkbox" value="1" name="trading" id="trading">
+         </label>
+        <p style="color: #033954; margin: 70px 0 0 0; font-size: 20px;">83,5%</p>
+    </div>
+    <div class="span3">
+        <label class="checkbox">
+            <input class="ajax_update" data-url="/provider/depupdate" data-pk="680" checked="checked" type="checkbox" value="1" name="price_visible" id="price_visible">Показывать пациенту <i class="vopros"></i>
+        </label>
+    </div>
+    <div class="span4">
+        <label style="color: #718189"><i class="vopros"></i> Файл логотипа</label>
+
+        <div class="fileupload fileupload-new">
+            <div>
+                <span class="btn btn-file btn-small text-submit class-margin">
+                    <span>Загрузить файл логотипа</span>
+
+                </span>
+
+            </div>
+            <div class="fileupload-new thumbnail" style="width: 160px; height: 120px;"><img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image"></div>
+
+
+        </div>
+
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</section>
+<!-- #middle-->
+
+</div>
+<!-- #wrapper -->
+
+<footer id="footer">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span4">
+                <div class="author">&copy; Medcomprice 2013 все права защищены</div>
+            </div>
+            <div class="span8">
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Правила использования сервиса</a></li>
+                        <li><a href="#">Техподдержка</a></li>
+                        <li><a href="#">Наши реквизиты</a></li>
+                        <li><a href="#">Частые вопросы</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</footer>
+<!-- #footer -->
+
+</body>
+</html>
