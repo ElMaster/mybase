@@ -474,9 +474,11 @@ body#pageAll #middle {
 #middle .radio-group {
     float: left;
 }
+
 #page1 #middle {
     padding-top: 10px;
 }
+
 #middle .radio-group:first-child {
     margin: 0 35px 0 0;
 }
@@ -698,33 +700,35 @@ input.search-query {
     padding-right: 0;
 }
 
-.table-nav{
+.table-nav {
     margin: 0;
 }
+
 .table-nav tr td {
     padding: 10px;
     text-align: center;
     font-size: 14px;
-    text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
     vertical-align: middle;
     cursor: pointer;
     background-color: #f5f5f5;
-    background-image: -moz-linear-gradient(top,#fff,#e6e6e6);
-    background-image: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#e6e6e6));
-    background-image: -webkit-linear-gradient(top,#fff,#e6e6e6);
-    background-image: -o-linear-gradient(top,#fff,#e6e6e6);
-    background-image: linear-gradient(to bottom,#fff,#e6e6e6);
+    background-image: -moz-linear-gradient(top, #fff, #e6e6e6);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#e6e6e6));
+    background-image: -webkit-linear-gradient(top, #fff, #e6e6e6);
+    background-image: -o-linear-gradient(top, #fff, #e6e6e6);
+    background-image: linear-gradient(to bottom, #fff, #e6e6e6);
     background-repeat: repeat-x;
     border-color: #e6e6e6 #e6e6e6 #bfbfbf;
-    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
     border-bottom-color: #a2a2a2;
 
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffe6e6e6',GradientType=0);
-    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
-    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
-    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffffff', endColorstr = '#ffe6e6e6', GradientType = 0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
+
 .table-nav tr td.active {
 
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -737,17 +741,20 @@ input.search-query {
     background-repeat: repeat-x;
     border-color: #0044cc #0044cc #002a80;
     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ff0088cc', endColorstr = '#ff0044cc', GradientType = 0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ff0088cc', endColorstr = '#ff0044cc', GradientType = 0);
     border: 1px solid #0044cc;
 }
+
 .table-nav tr td.active a {
     color: #ffffff;
 }
+
 .table-nav tr td.active:focus {
 
     outline-offset: -2px;
 }
+
 .table-nav tr td.active:hover, .table-nav tr td.active:focus {
     color: #333333;
     text-decoration: none;
@@ -757,6 +764,7 @@ input.search-query {
     -o-transition: background-position 0.1s linear;
     transition: background-position 0.1s linear;
 }
+
 .table-nav tr td.active, .table-nav tr td:active {
     background-image: none;
     outline: 0;
@@ -764,14 +772,17 @@ input.search-query {
     -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
+
 .table-nav tr td.active:hover, .table-nav tr td.active:focus, .table-nav tr td.active:active,
 .table-nav tr td.active {
     color: #ffffff;
     background-color: #0044cc;
 }
+
 .table-nav tr td:hover, .table-nav tr td:focus, .table-nav tr td:active {
     background-color: #e6e6e6;
 }
+
 .table-nav tr td:hover, .table-nav tr td:focus {
     color: #333333;
     text-decoration: none;
@@ -781,6 +792,7 @@ input.search-query {
     -o-transition: background-position 0.1s linear;
     transition: background-position 0.1s linear;
 }
+
 .table-nav tr td:first-child {
     -webkit-border-top-left-radius: 4px;
     -moz-border-radius-topleft: 4px;
@@ -789,6 +801,7 @@ input.search-query {
     -moz-border-radius-bottomleft: 4px;
     border-bottom-left-raius: 4px;
 }
+
 .table-nav tr td:last-child {
     -webkit-border-top-right-radius: 4px;
     -moz-border-radius-topright: 4px;
@@ -806,7 +819,6 @@ input.search-query {
     text-decoration: none;
 }
 
-
 .navbar .nav > li > a {
 
     font-size: 14px;
@@ -818,10 +830,11 @@ input.search-query {
 .navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
     color: #017bb8;
 }
+
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
     background-color: hsl(216, 97%, 40%) !important;
     background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d6cfb", endColorstr="#0352c8");
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = "#0d6cfb", endColorstr = "#0352c8");
     background-image: -khtml-gradient(linear, left top, left bottom, from(#0d6cfb), to(#0352c8));
     background-image: -moz-linear-gradient(top, #0d6cfb, #0352c8);
     background-image: -ms-linear-gradient(top, #0d6cfb, #0352c8);
@@ -838,7 +851,7 @@ input.search-query {
 /*--------------- Перекрыл меню--------------*/
 
 /*--------------- Контент данные пользователя--------------*/
-.user-data, .detailsOfProvider, .price-list {
+.user-data, .detailsOfProvider, .price-list, .reports {
     background: url("../img/bagraund_cn.png") top repeat-x #ffffff;
     border: 1px solid #B0BFC5;
     -webkit-border-radius: 6px;
@@ -874,12 +887,15 @@ input.search-query {
     color: #017ab7;
     text-decoration: none;
 }
+
 .detailsOfProvider .span5 .table tr td table tr:first-child td {
     padding-top: 4px;
 }
+
 .editableform {
     width: 251px;
 }
+
 .class-margins {
     margin: 5px 0;
 }
@@ -1047,18 +1063,23 @@ input.search-query {
 .detailsOfProvider .span5 table tr:last-child td {
     vertical-align: top;
 }
+
 .detailsOfProvider .span5 .table tr td table tr td {
     vertical-align: middle;
 }
-.edit-user-widget form, .edit-user-widget .control-group  {
+
+.edit-user-widget form, .edit-user-widget .control-group {
     margin: 0;
 }
+
 form {
     margin: 0;
 }
+
 .control-group {
     margin: 0;
 }
+
 .detailsOfProvider .span5  table tr:last-child > td:last-child {
     padding-top: 0;
 }
@@ -1067,16 +1088,18 @@ form {
     padding-top: 8px;
 }
 
-@media (min-width: 1px) and (max-width: 1200px){
+@media (min-width: 1px) and (max-width: 1200px) {
     .detailsOfProvider .editableform .editable-input input {
         width: 118px;
 
     }
+
     .detailsOfProvider .span5 .editableform {
         width: 180px;
 
     }
 }
+
 .vopros, .ic-close, .ic-edit, .badge-success, .ic-erros, .exel-i, .print-i {
     display: inline-block;
     width: 16px;
@@ -1089,6 +1112,7 @@ form {
     background-position: 0px 0px;
     background-repeat: no-repeat;
 }
+
 .ic-close, .ic-edit, .badge-success, ic-erros, .exel-i, .print-i {
     width: 25px;
     height: 15px;
@@ -1098,16 +1122,19 @@ form {
     background-image: url("../img/close_i.png");
 
 }
+
 .ic-edit {
     background-image: url("../img/edit_i.png");
     margin-left: 0px;
 }
+
 .ic-erros {
     background-image: url("../img/errors1.png");
     margin-left: 0px;
 
     height: 15px;
 }
+
 .exel-i {
     width: 20px;
     height: 20px;
@@ -1115,25 +1142,29 @@ form {
     margin-left: 0px;
     margin: -1px 2px 0 0;
 }
+
 .print-i {
-    width:12px;
-    height:13px;
+    width: 12px;
+    height: 13px;
     background-image: url("../img/print_b.png");
     margin: 2px 3px 0 0;
 
 }
+
 .label-noClick, .label-click {
     color: #017bb8;
     font-size: 14px;
 }
+
 .label-click {
     background-color: #e6e6e6;
     background-image: none;
     outline: 0;
-    -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
-    -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
-    box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05)
+    -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05)
 }
+
 .label-click:hover, .label-noClick:hover {
     color: #017bb8;
 }
@@ -1155,7 +1186,7 @@ form {
     background: #99ffcc;
 }
 
-.listOfEmployees table thead tr th {
+.listOfEmployees table thead tr th, .reports table thead tr th {
     font-size: 14px;
     color: #718289;
     font-weight: normal;
@@ -1248,20 +1279,25 @@ form {
 .edit-user-widget .editableform {
     width: 200px;
 }
+
 .edit-user-widget .editable-input select {
     width: 140px;
 }
+
 @media (min-width: 1px) and (max-width: 1200px) {
     .edit-user-widget .editableform .editable-input input {
         width: 98px;
     }
+
     .edit-user-widget .editableform {
         width: 150px;
     }
+
     .edit-user-widget .editable-input select {
         width: 100px;
     }
 }
+
 /*редактирования сотрудников*/
 
 .user-data .row-fluid .span3 {
@@ -1295,7 +1331,6 @@ form {
     padding: 20px;
 }
 
-
 .name-ulug {
     padding: 10px;
     border: 1px solid #d9e0e3;
@@ -1306,99 +1341,117 @@ form {
 
 /*--------------- Контент реквизиты провайдера--------------*/
 
-
-
-
-
 /* Прайс-лист подразделения
 -----------------------------------------------------------------------------*/
 
 .price-list .listOfEmployees table thead tr th {
     text-align: center;
 }
-.price-list .listOfEmployees table thead tr th:nth-child(3){
+
+.price-list .listOfEmployees table thead tr th:nth-child(3) {
     text-align: left;
 }
+
 .price-list .listOfEmployees table tbody tr td {
     border-bottom: 1px solid #e1e6ea;
     cursor: pointer;
 }
+
 .price-list .listOfEmployees table tbody tr td:nth-child(2) {
     text-align: center;
 }
+
 .price-list .span9 .listOfEmployees .tables-cont {
     margin: 0px;
     overflow-x: hidden;
     overflow-y: scroll;
     /*height: 300px;*/
 }
+
 .price-list .span9 form {
     margin: 0;
 }
+
 .price-list .span9 form.search-form {
     margin: 55px 0 0 0;
 }
-.price-list .span9 form.search-form label{
+
+.price-list .span9 form.search-form label {
     float: left;
     margin: 5px 5px 0 0;
     color: #033954;
 }
-.price-list .span9 form.search-form input{
+
+.price-list .span9 form.search-form input {
     color: #033954;
 }
+
 .price-list .span9 form.search-form button,
-.price-list .span9 form.search-form button:hover{
+.price-list .span9 form.search-form button:hover {
     color: #017ab7;
 }
+
 .price-list .btn-block-w {
     float: right;
     margin: 20px 0 0 0;
 }
-.price-list .btn-block-w a:nth-child(1){
+
+.price-list .btn-block-w a:nth-child(1) {
     margin: 0 0 5px 0;
 
 }
+
 .price-list .btn-block-w a {
     color: #017ab7;
     text-decoration: none;
 }
+
 .price-list .btn-block-w a:hover {
     color: #017ab7;
 }
+
 .price-list  .price-list-widget  table thead th:nth-child(3),
 .price-list  .price-list-widget  table thead th:nth-child(4),
-.price-list  .price-list-widget  table thead th:nth-child(9){
+.price-list  .price-list-widget  table thead th:nth-child(9) {
     text-align: left;
 }
+
 .price-list .price-list-widget .icon-ok {
     background-image: url("../img/tick_ok.png");
     background-position: 0 0;
     margin: 2px 0 0 5px;
 }
+
 .price-list .price-list-widget table tr td {
     padding: 4px 5px;
     text-align: center;
     vertical-align: middle;
 
 }
+
 .price-list .price-list-widget table  tbody tr td:nth-child(4) {
     text-align: left;
     color: #017ab7;
 }
+
 .price-list .price-list-widget table  tbody tr td:nth-child(5),
 .price-list .price-list-widget table  tbody tr td:nth-child(7),
 .price-list .price-list-widget table  tbody tr td:nth-child(8) {
     color: #033954;
 }
+
 .price-list .color-r {
     color: #cc6666;
 }
+
 .price-list .color-g {
     background: #99ffcc;
 }
+
 .price-list .color-e {
     background: #ffff66;
 }
+
 .price-list .smoll-input {
     width: auto;
     float: left;
@@ -1407,82 +1460,102 @@ form {
     margin: 0;
 
 }
+
 .price-list .price-list-widget .ic-erros {
     margin: 0 0 0 0px;
 }
+
 .price-list .tables-cont {
     /*min-height: 350px;*/
 }
-.price-list .price-list-widget .tables-cont  {
+
+.price-list .price-list-widget .tables-cont {
     /*min-height: 315px;*/
 }
+
 .price-list .form-copy {
     margin: 10px 0 20px 0;
     overflow: hidden;
 }
+
 .price-list .form-copy .marg-f {
     margin: 0 10px 0 0;
 }
+
 .price-list .form-copy select {
     width: 185px;
     color: #033954;
 }
+
 .price-list .form-copy label {
     width: auto;
     color: #033954;
 }
+
 .price-list .form-copy button, .price-list .form-copy button:hover {
     color: #017ab7;
 }
+
 @media (min-width: 1px) and (max-width: 1200px) {
     .price-list .form-copy select {
         width: 345px;
         margin: 0 0 10px 0;
     }
+
     #fixed {
-        width: 211px!important;
+        width: 211px !important;
     }
+
     #fixedBox {
         width: 940px;
     }
 }
+
 .price-list .listOfEmployees tr.selected td {
     background: #ccffe5;
 
 }
+
 .title-h5 {
     font-size: 16px;
     color: #033954;
 }
+
 #fixed .tables-cont {
     max-height: 400px;
     overflow-y: scroll;
     padding: 8px;
 
 }
+
 .error_tab {
     background: #fbe3e3;
     border: 1px solid #fe0000;
 }
+
 .error_tab .tooltip.in {
     opacity: 1;
 }
+
 .error_tab .tooltip.right .tooltip-arrow,
-.error_tab .tooltip.left .tooltip-arrow{
+.error_tab .tooltip.left .tooltip-arrow {
     border-right-color: #cc6666;
     border-left-color: #cc6666;
 
 }
+
 .error_tab .tooltip-inner {
     border: 1px solid #cc6666;
     color: #cc6666;
     background-color: #ffffff;
     font-size: 13px;
 }
+
 #myModal2 {
     width: 900px;
-    
+
 }
+
 /*--------------------------------------------------------------------------*/
 
 /* Реквизиты подразделения
@@ -1490,165 +1563,198 @@ form {
 .requisites-units .units-t-address tbody tr td {
     padding: 8px;
 }
+
 .requisites-units .units-t-address tbody tr td:first-child {
     width: 22%;
     text-align: right;
     color: #cc6666;
 }
+
 .requisites-units .units-t-address tbody tr td:last-child {
     width: 70%;
     padding: 8px 5px 8px 15px;
 }
+
 .requisites-units .units-t-address tbody tr td:last-child a,
-.requisites-units .units-t-address tbody tr td:last-child a:hover{
+.requisites-units .units-t-address tbody tr td:last-child a:hover {
     text-decoration: none;
     border-bottom: solid 1px #0088cc;
     color: #0088cc;
 }
+
 .requisites-units .units-t-address tbody tr td table tr td {
     vertical-align: middle;
     color: #cc6666;
     padding: 5px 4px;
 }
+
 .re-u .all-block-u > .row-fluid:nth-child(2n) {
     background: #f0f3f4;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     border-radius: 12px;
 }
+
 .re-u .tables-cont {
     min-height: 50px;
 
 }
+
 .requisites-units table {
     margin: 0;
 }
+
 .requisites-units .units-t-address  .sposob-s tbody tr td {
     padding: 4px 5px;
 }
+
 .requisites-units .units-t-address  .sposob-s {
     margin: 0;
 }
+
 .requisites-units .st-p .tables-cont {
     margin: 0;
 }
 
-
 .block-office-staff {
 
 }
+
 .all-block-u .row-fluid {
     margin: 0 0 10px 0;
 }
+
 .all-block-u .row-fluid .span3 {
     text-align: right;
     color: #cc6666;
     padding: 12px 0 12px 12px;
 }
+
 .block-actual-address .units-t-address tr td:first-child,
-.block-actual-address .units-t-address tr td:nth-child(3){
+.block-actual-address .units-t-address tr td:nth-child(3) {
     width: 10%;
     color: #cc6666;
     padding: 4px 5px 4px 0px;
 }
+
 .block-actual-address .units-t-address tr td:nth-child(2),
-.block-actual-address .units-t-address tr td:nth-child(4){
+.block-actual-address .units-t-address tr td:nth-child(4) {
     width: 30%;
 
 }
+
 .block-actual-address .units-t-address tr td:nth-child(2) a,
-.block-actual-address .units-t-address tr td:nth-child(4) a{
+.block-actual-address .units-t-address tr td:nth-child(4) a {
     text-decoration: none;
     border-bottom: solid 1px #0088cc;
     color: #0088cc;
 }
+
 .block-communication .table-condensed thead tr th {
     color: #718289;
 
 }
+
 .block-communication .table-condensed tbody tr td {
     color: #033954;
 }
+
 .block-actual-address .span9,
-.block-office-staff .span9{
+.block-office-staff .span9 {
     padding: 7px 0;
 }
+
 .block-office-staff .span9 table thead tr th {
     vertical-align: middle;
 }
+
 .block-office-staff .tables-cont {
     background: #fff;
 }
+
 .block-standard-schedule .span9 {
     text-align: left;
 }
+
 .block-standard-schedule .pull-right {
     float: left;
 }
+
 .price-list .block-standard-schedule .time_form {
 
 }
+
 .block-standard-schedule table tr td {
     vertical-align: middle;
     padding: 5px 4px;
 }
+
 .block-standard-schedule table tr td:nth-child(1) {
     text-align: right;
     width: 25%;
     color: #718189;
 }
+
 .block-standard-schedule .row-fluid:nth-child(1) table tr:nth-child(1) td:nth-child(1) {
     color: #cc6666;
 }
-.block-standard-schedule table tr td:nth-child(3){
+
+.block-standard-schedule table tr td:nth-child(3) {
     width: 5%;
     color: #718189;
 }
+
 .block-standard-schedule table tr td:nth-child(2) {
     width: 20%;
     color: #718189;
 }
+
 .block-standard-schedule table tr td:nth-child(4) {
     width: 50%;
     color: #718189;
 }
+
 .block-standard-schedule table {
     margin: 0;
 }
+
 .all-block-u .block-standard-schedule .row-fluid {
     margin: 0;
 }
+
 #pageAll .re-u .all-block-u .block-brief-description {
     background: none;
 }
+
 .block-brief-description .span9 {
     padding: 12px 12px 12px 0;
 }
+
 .block-brief-description i.icon-ok {
     background-image: url("../img/tick_ok.png");
     background-position: 0 0;
     margin-top: 2px;
 }
+
 .block-patient-traded .span2 .checkbox {
     margin: 20px 0 0 0;
 
 }
+
 .block-patient-traded .span3 .checkbox {
     clear: both;
     position: relative;
-    margin-top:100px;
+    margin-top: 100px;
     text-align: left;
     color: #033954;
 
 }
+
 .block-patient-traded .span3 .checkbox input {
 
 }
 
 /*--------------------------------------------------------------------------*/
-
-
-
 
 /* Редактирование услуги
 -----------------------------------------------------------------------------*/
@@ -1656,63 +1762,79 @@ form {
 .editing-services-module .span9 {
     color: #033954;
 }
+
 .editing-services-module .span3 {
     padding: 0;
     text-align: right;
     color: #718189;
 
 }
+
 .editing-services-module .row-fluid {
     padding: 2px 0;
 }
-.editing-services-module .row-fluid:nth-child(4){
+
+.editing-services-module .row-fluid:nth-child(4) {
     background: #e3e6e7;
 }
+
 .editing-services-module .row-fluid:nth-child(2) .span3,
 .editing-services-module .row-fluid:nth-child(3) .span3,
-.editing-services-module .row-fluid:nth-child(4) .span3{
-    color: #cc6666;"
+.editing-services-module .row-fluid:nth-child(4) .span3 {
+    color: #cc6666;
+"
 }
+
 .price-list .editing-services-module .listOfEmployees .tables-cont {
     background: #ffffff;
     margin: 3px 0;
     overflow-y: hidden;
 }
-.price-list .editing-services-module .listOfEmployees table tbody tr td:nth-child(2){
+
+.price-list .editing-services-module .listOfEmployees table tbody tr td:nth-child(2) {
     text-align: left;
 }
+
 .price-list .editing-services-module .table-module table tbody tr td {
     vertical-align: middle;
     color: #cc6666;
     padding: 2px 8px;
 }
-.price-list .editing-services-module .table-module table tbody tr td:nth-child(5n+1){
+
+.price-list .editing-services-module .table-module table tbody tr td:nth-child(5n+1) {
     color: #033954;
 }
+
 .price-list .editing-services-module .table-module table {
     margin-bottom: 0;
 }
+
 .price-list .editing-services-module .smoll-input {
     width: 80px;
     color: #033954;
     height: 15px;
     font-size: 12px;
 }
+
 .price-list .editing-services-module label {
     margin-bottom: 0;
 }
+
 .price-list .editing-services-module select {
     margin-bottom: 0;
 }
+
 .margin-b {
     margin-bottom: 15px;
 }
+
 .price-list .editing-services-module textarea {
-    width: 98%!important;
+    width: 98% !important;
     font: 14px calibri;
     color: #033954;
 }
-.search-form .text-submit{
+
+.search-form .text-submit {
     font-size: 14px;
 }
 
@@ -1720,31 +1842,38 @@ form {
     padding: 5px 10px;
     background: #e3e6e7;
 }
+
 .price-list .reference .span2 {
     text-align: right;
     color: #718189;
 }
+
 .price-list .reference .span10 table tr td {
     vertical-align: middle;
     padding: 5px 4px;
     color: #033954;
 }
+
 .btn-block-m {
     text-align: right;
     margin-top: 55px;
 
 }
+
 .price-list .poisk-w {
     margin: 0;
 }
+
 .price-list .poisk-w tr td {
     padding: 0;
 
 }
+
 @media (min-width: 1px) and (max-width: 1200px) {
     .price-list .btn-block-m {
         margin-top: 59px;
     }
+
     .price-list .btn-block-m a {
         padding: 0 6px;
         font-size: 10.5px;
@@ -1754,54 +1883,140 @@ form {
 
     }
 }
+
 .price-list .modal {
     width: 900px;
     left: 38%
 }
+
 .price-list .modal-header {
     padding: 0px 15px;
 }
+
 .price-list textarea {
     margin-bottom: 0px;
 }
+
 .price-list .modal.fade.in {
     top: 5%;
     left: 38%
 }
+
 .price-list .modal-body {
     max-height: 550px;
 }
 
-.price-list .editing-services-module .row-fluid [class*="span"]{
-   min-height: 20px;
+.price-list .editing-services-module .row-fluid [class*="span"] {
+    min-height: 20px;
 }
+
 .price-list .editing-services-module select {
     height: 25px;
     padding: 0;
 }
+
 .price-list .editing-services-module .tables-cont {
     padding: 5px;
-    
+
 }
+
 .price-list .editing-services-module .tables-cont table {
     margin-bottom: 0;
 }
+
 .price-list .editing-services-module .listOfEmployees .tables-cont tr:last-child td {
     border-bottom: none;
 }
+
 .price-list .editing-services-module .listOfEmployees .tables-cont tr td {
-     padding: 4px 0;
+    padding: 4px 0;
 }
+
 .price-list .modal-footer {
-   padding: 5px 6px 6px
+    padding: 5px 6px 6px
 }
-.editing-services-module .row-fluid:last-child [class*="span"]  {
-   min-height: 0;
+
+.editing-services-module .row-fluid:last-child [class*="span"] {
+    min-height: 0;
 }
+
 .price-list .myModal2 table tr td {
     padding: 5px 0;
 }
 
+/*--------------------------------------------------------------------------*/
+
+/* Отчеты
+-----------------------------------------------------------------------------*/
+
+.ic-calendar {
+    display: inline-block;
+    width: 23px;
+    height: 25px;
+    margin-top: 0px;
+    margin-right: 0px;
+    line-height: 14px;
+    vertical-align: text-top;
+    background-image: url("../img/ic-calendar.png");
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+
+
+}
+.reports .ic-calendar {
+    margin-right: 50px;
+}
+.reports table {
+    margin-bottom: 0;
+}
+.reports table tr td {
+    padding: 2px 4px;
+    vertical-align: middle;
+}
+.reports table tr td form {
+    margin-bottom: 0;
+}
+.reports table tr td  input {
+    margin-bottom: 0;
+    text-align: center;
+}
+.reports table.time-w tr td {
+    padding-left: 26px;
+    line-height: 16px;
+
+}
+.reports table tr td a {
+    color: #017ab7;
+}
+.reports table tr td a:hover {
+    text-decoration: none;
+}
+.reports table thead tr th {
+    font-size: 12px;
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+.reports .selected td {
+    background: #e3e6e7;
+}
+.reports .listOfUnits .tables-cont table tbody tr td {
+    border-bottom: 1px solid #e3e6e7;
+   text-decoration: underline;
+    color: #033954;
+    cursor: pointer;
+}
+.reports .tables-cont {
+    overflow-y: scroll;
+    max-height: 149px;
+}
+.reports .tables-cont table {
+    margin-bottom: 20px;
+
+}
+.reports .listOfUnits > table tr td {
+    padding-left: 15px;
+
+}
 /*--------------------------------------------------------------------------*/
 
 /* Footer
