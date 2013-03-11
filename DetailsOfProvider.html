@@ -27,7 +27,7 @@
 
     <!--<script type="text/javascript" src="http://x-editable.demopage.ru/js/google-code-prettify/prettify.js"></script>-->
     <!--<script type="text/javascript"-->
-            <!--src="http://x-editable.demopage.ru/assets/c9e45511/gridview/jquery.yiigridview.js"></script>-->
+    <!--src="http://x-editable.demopage.ru/assets/c9e45511/gridview/jquery.yiigridview.js"></script>-->
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection"/>
 </head>
 
@@ -46,8 +46,9 @@
                                 <table id="yw0" class="table table-nav">
                                     <tbody>
                                     <tr>
-                                        <td class="active"><a href="DetailsOfProvider.html">Реквизиты провайдера</a></td>
-                                        <td ><a href="requisitesUnits.html">Реквизиты подразделения</a></td>
+                                        <td class="active"><a href="DetailsOfProvider.html">Реквизиты провайдера</a>
+                                        </td>
+                                        <td><a href="requisitesUnits.html">Реквизиты подразделения</a></td>
                                         <td><a href="priceList.html">Прайс-лист подразделения</a></td>
                                         <td><a href="#">Заявки пациентов</a></td>
                                         <td><a href="regiser_user.html">Данные пользователя</a></td>
@@ -112,408 +113,431 @@
 
 <section id="middle">
 
-    <div class="container">
-        <div class="row-fluid">
-            <div class="span12 detailsOfProvider bs-docs-example">
-                <div class="row-fluid">
-                    <div class="span5">
-                        <h4 class="title-h3">Реквизиты провайдера</h4>
-                        <table class="table">
-                               <tbody>
-                               <tr rowspan="2">
-                                   <td><i class="vopros"></i>Юридическое название</td>
-                                   <td><a href="#" class="editable editable-click">ООО “Медицинский центр ”Мать и дитя”</a></td>
-                               </tr>
-                               <tr>
-                                   <td><i class="vopros"></i>Код государственной регистрации</td>
-                                   <td><a href="#" class="editable editable-click">добавить код</a></td>
-                               </tr>
-                               <tr>
-                                   <td><i class="vopros"></i>Почтовый адрес</td>
-                                   <td>
-                                       <table>
-                                            <tbody>
-                                            <tr>
-                                                <td>Страна</td>
-                                                <td>
-                                                    <a href="#" class="editable editable-click" style="display: none;">добавить</a>
-                                                    <div class="editable-container editable-inline">
-                                               <div class="editableform-loading" style="width: 25px; display: none;"></div>
-                                               <form class="form-inline editableform" style="">
-                                                   <div class="control-group">
-                                                       <div>
-                                                           <div class="editable-input"><input type="text"
-                                                                                              class="input-medium"></div>
-                                                           <div class="editable-buttons">
-                                                               <button type="submit" class="btn btn-primary editable-submit">
-                                                                   <i class="icon-ok icon-white"></i></button>
-                                                               <button type="button" class="btn editable-cancel"><i
-                                                                       class="icon-remove"></i></button>
-                                                           </div>
-                                                       </div>
-                                                       <div class="editable-error-block help-block"
-                                                            style="display: none;"></div>
-                                                   </div>
-                                               </form>
-                                           </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Область</td>
-                                                <td><a href="#" class="editable editable-click">Киевская</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Район области</td>
-                                                <td>
-                                                    <a href="#" class="editable editable-click">Киевский</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Индекс</td>
-                                                <td><a href="#" class="editable editable-click">123456</a></td>
-                                            </tr>
-                                             <tr>
-                                                <td>Город</td>
-                                                <td><a href="#" class="editable editable-click">Киев</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Улица</td>
-                                                <td><a href="#" class="editable editable-click">добавить</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Дом/офис</td>
-                                                <td><a href="#" class="editable editable-click">добавить</a></td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                   </td>
-                               </tr>
-                               </tbody>
-                        </table>
+<div class="container">
+<div class="row-fluid">
+<div class="span12 detailsOfProvider bs-docs-example">
+<div class="row-fluid">
+<div class="span5">
+    <h4 class="title-h3">Реквизиты провайдера</h4>
+    <table class="table">
+        <tbody>
+        <tr rowspan="2">
+            <td><i class="vopros"></i>Юридическое название</td>
+            <td><a href="#" class="editable editable-click">ООО “Медицинский центр ”Мать и дитя”</a></td>
+        </tr>
+        <tr>
+            <td><i class="vopros"></i>Код государственной регистрации</td>
+            <td><a href="#" class="editable editable-click">добавить код</a></td>
+        </tr>
+        <tr>
+            <td><i class="vopros"></i>Почтовый адрес</td>
 
-                    </div>
-                    <div class="span7">
-                        <div class="row-fluid">
-                            <div class="span12 listOfEmployees">
-                                <h4 class="title-h3">Полный список сотрудников <i class="vopros"></i></h4>
-                                <div class="tables-cont">
+        </tr>
 
-                                    <table class="items table table-condensed">
-                                        <thead>
-                                        <tr>
-                                            <th rowspan="2"></th>
-                                            <th>ФИО сотрудника</th>
-                                            <th>Менеджер организации</th>
-                                            <th>Администратор</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr class="selected">
+        <tr>
+            <td colspan="2" style="padding-left: 0px;">
 
-                                            <td width = "80px">
-                                                <a class="delete_user" data-id="674" href="#">
-                                                    <i class="ic-close"></i>
-                                                </a>
-                                                <a data-id="674" class="edit_user"  onclick="{return false;}" href="#">
-                                                    <i class="ic-edit"></i>
-                                                </a>
-                                            </td>
-                                            <td width = "250px">Иванов Иван Иванович</td>
-                                            <td style="text-align: center">
-                                                <a style="cursor: pointer; text-decoration: underline;" class="changeurole" href="#">
-                                                    <span class="btn btn-mini label-noClick">Назначить</span>
-                                                </a>
-                                            </td>
-                                            <td style="text-align: center">
-                                                <a style="cursor: pointer; text-decoration: underline;" class="changeurole" href="#">
-                                                    <span class="btn btn-mini label-click">Снять</span>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
+                <div id="input">
+                    <input id="gmaps-input-address" placeholder="Начните печатать адрес..." type="text"
+                           style="width: 100%;" value="улица Шевченко, 30, Борисполь, Киевская область, Украина"
+                           data-url="" class="ui-autocomplete-input span8" autocomplete="off"><span
+                        role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                    <!--<br>-->
+                    <!--<br>-->
+                    <!--Страна: <span id="gmaps-output-country"> Украина</span>-->
+                    <!--<br>-->
+                    <!--<br>-->
+                    <!--Область: <span id="gmaps-output-administrative_area_level_1"> Киевская область</span>-->
+                    <!--<br>-->
+                    <!--<br>-->
+                    <!--Населеный пункт: <span id="gmaps-output-locality"> Борисполь</span>-->
+                    <!--<br>-->
+                    <!--<br>-->
+                    <!--Улица: <span id="gmaps-output-route">улица Шевченко</span>-->
+                    <!--<br>-->
+                    <!--<br>-->
+                    <!--Дом/офис: <span id="gmaps-output-street_number"> 30</span>-->
+                    <!--<br>-->
 
-                                            <td width = "80px">
-                                                <a class="delete_user" data-id="674" href="#">
-                                                    <i class="ic-close"></i>
-                                                </a>
-                                                <a data-id="674" class="edit_user"  onclick="{return false;}" href="#">
-                                                    <i class="ic-edit"></i>
-                                                </a>
-                                            </td>
-                                            <td width = "250px">Иванов Иван Иванович</td>
-                                            <td style="text-align: center">
-                                                <a style="cursor: pointer; text-decoration: underline;" class="changeurole" href="#">
-                                                    <span class="btn btn-mini label-noClick">Назначить</span>
-                                                </a>
-                                            </td>
-                                            <td style="text-align: center">
-                                                <a style="cursor: pointer; text-decoration: underline;" class="changeurole" href="#">
-                                                    <span class="btn btn-mini label-click">Снять</span>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-
-                                            <td width = "80px">
-                                                <a class="delete_user" data-id="674" href="#">
-                                                    <i class="ic-close"></i>
-                                                </a>
-                                                <a data-id="674" class="edit_user"  onclick="{return false;}" href="#">
-                                                    <i class="ic-edit"></i>
-                                                </a>
-                                            </td>
-                                            <td width = "250px">Иванов Иван Иванович</td>
-                                            <td style="text-align: center">
-                                                <a style="cursor: pointer; text-decoration: underline;" class="changeurole" href="#">
-                                                    <span class="btn btn-mini label-noClick">Назначить</span>
-                                                </a>
-                                            </td>
-                                            <td style="text-align: center">
-                                                <a style="cursor: pointer; text-decoration: underline;" class="changeurole" href="#">
-                                                    <span class="btn btn-mini label-click">Снять</span>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-
-                                            <td width = "80px">
-                                                <a class="delete_user" data-id="674" href="#">
-                                                    <i class="ic-close"></i>
-                                                </a>
-                                                <a data-id="674" class="edit_user"  onclick="{return false;}" href="#">
-                                                    <i class="ic-edit"></i>
-                                                </a>
-                                            </td>
-                                            <td width = "250px">Иванов Иван Иванович</td>
-                                            <td style="text-align: center">
-                                                <a style="cursor: pointer; text-decoration: underline;" class="changeurole" href="#">
-                                                    <span class="btn btn-mini label-noClick">Назначить</span>
-                                                </a>
-                                            </td>
-                                            <td style="text-align: center">
-                                                <a style="cursor: pointer; text-decoration: underline;" class="changeurole" href="#">
-                                                    <span class="btn btn-mini label-click">Снять</span>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-
-                                            <td width = "80px">
-                                                <a class="delete_user" data-id="674" href="#">
-                                                    <i class="ic-close"></i>
-                                                </a>
-                                                <a data-id="674" class="edit_user"  onclick="{return false;}" href="#">
-                                                    <i class="ic-edit"></i>
-                                                </a>
-                                            </td>
-                                            <td width = "250px">Иванов Иван Иванович</td>
-                                            <td style="text-align: center">
-                                                <a style="cursor: pointer; text-decoration: underline;" class="changeurole" href="#">
-                                                    <span class="btn btn-mini label-noClick">Назначить</span>
-                                                </a>
-                                            </td>
-                                            <td style="text-align: center">
-                                                <a style="cursor: pointer; text-decoration: underline;" class="changeurole" href="#">
-                                                    <span class="btn btn-mini label-click">Снять</span>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-
-                                            <td width = "80px">
-                                                <a class="delete_user" data-id="674" href="#">
-                                                    <i class="ic-close"></i>
-                                                </a>
-                                                <a data-id="674" class="edit_user"  onclick="{return false;}" href="#">
-                                                    <i class="ic-edit"></i>
-                                                </a>
-                                            </td>
-                                            <td width = "250px">Иванов Иван Иванович</td>
-                                            <td style="text-align: center">
-                                                <a style="cursor: pointer; text-decoration: underline;" class="changeurole" href="#">
-                                                    <span class="btn btn-mini label-noClick">Назначить</span>
-                                                </a>
-                                            </td>
-                                            <td style="text-align: center">
-                                                <a style="cursor: pointer; text-decoration: underline;" class="changeurole" href="#">
-                                                    <span class="btn btn-mini label-click">Снять</span>
-                                                </a>
-                                            </td>
-                                        </tr>
-
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row-fluid">
-                            <div class="span12">
-                                <button type="submit" class="btn text-submit class-margin click-script-submit">Добавить сотрудника в список</button>
-                            </div>
-                        </div>
-                        <div class="row-fluid">
-                            <div class="span12 user-data-widget">
-                                <h4 class="title-h3">Персональные данные сотрудника</h4>
-                                <form class="bs-docs-example  form-horizontal">
-                                    <div class="row-fluid">
-                                        <div class="span6">
-                                            <div class="control-group ">
-                                                <label class="control-label" for="Famile">Фамилия</label>
-                                                <div class="controls">
-                                                    <input type="text" id="Famile" placeholder="Фамилия">
-                                                </div>
-
-                                            </div>
-                                            <div class="control-group ">
-                                                <label class="control-label" for="username">Имя для входа</label>
-                                                <div class="controls">
-                                                    <input type="text" id="username" placeholder="Имя для входа">
-                                                </div>
-
-                                            </div>
-                                            <div class="control-group ">
-                                                <label class="control-label" for="inputPassword">Пароль</label>
-                                                <div class="controls">
-                                                    <input type="password" id="inputPassword" placeholder="Пароль">
-                                                </div>
-                                            </div>
-                                            <div class="control-group ">
-                                                <label class="control-label" for="inputNextPassword">Повтор пароля</label>
-                                                <div class="controls">
-                                                    <input type="password" id="inputNextPassword" placeholder="Пароль">
-                                                </div>
-                                            </div>
-
-
-                                        </div>
-                                        <div class="span6">
-                                            <div class="control-group ">
-                                                <label class="control-label" for="name">Имя и отчество</label>
-                                                <div class="controls">
-                                                    <input type="text" id="name" placeholder="Имя и отчество">
-                                                </div>
-                                            </div>
-
-                                            <div class="control-group">
-                                                <label class="control-label inputEmail" for="inputEmail">Адрес e-mail</label>
-                                                <div class="controls">
-                                                    <input type="text" id="inputEmail" placeholder="Адрес e-mail">
-                                                </div>
-                                            </div>
-                                            <div class="control-group">
-                                                <label class="control-label">Обращение</label>
-                                                <div class="controls">
-                                                    <select>
-                                                        <option>Уважаемый</option>
-                                                        <option>Уважаемая</option>
-                                                    </select>
-
-                                                </div>
-                                            </div>
-                                            <div class="control-group">
-                                                <div class="controls">
-                                                    <button type="submit" class="btn text-submit">Добавить сотрудника в список</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </form>
-                            </div>
-                        </div>
-                        <div class="row-fluid">
-                            <div class="span12 edit-user-widget">
-                                <table class="table">
-                                   <tbody>
-                                   <tr>
-                                       <td width="95px">Фамилия</td>
-                                       <td><a href="#" class="editable editable-click" style="display: none">Иванов</a>
-                                           <div class="editable-container editable-inline">
-                                               <div class="editableform-loading" style="width: 25px; display: none;"></div>
-                                               <form class="form-inline editableform" style="">
-                                                   <div class="control-group">
-                                                       <div>
-                                                           <div class="editable-input"><input type="text"
-                                                                                              class="input-medium"></div>
-                                                           <div class="editable-buttons">
-                                                               <button type="submit" class="btn btn-primary editable-submit">
-                                                                   <i class="icon-ok icon-white"></i></button>
-                                                               <button type="button" class="btn editable-cancel"><i
-                                                                       class="icon-remove"></i></button>
-                                                           </div>
-                                                       </div>
-                                                       <div class="editable-error-block help-block"
-                                                            style="display: none;"></div>
-                                                   </div>
-                                               </form>
-                                           </div>
-                                       </td>
-                                       <td>Имя для входа</td>
-                                       <td><a href="#" class="editable editable-click">ivanov@mail.com</a></td>
-
-                                   </tr>
-                                   <tr>
-                                       <td>Имя и отчество</td>
-                                       <td><a href="#" class="editable editable-click">Иван Иванович</a></td>
-                                       <td>Адрес e-mail</td>
-                                       <td><a href="#" class="editable editable-click" style="display: none">ivanov@mail.com</a>
-                                           <div class="editable-container editable-inline">
-                                               <div class="editableform-loading" style="width: 25px; display: none;"></div>
-                                               <form class="form-inline editableform" style="">
-                                                   <div class="control-group">
-                                                       <div>
-                                                           <div class="editable-input"><input type="text"
-                                                                                              class="input-medium"></div>
-                                                           <div class="editable-buttons">
-                                                               <button type="submit" class="btn btn-primary editable-submit">
-                                                                   <i class="icon-ok icon-white"></i></button>
-                                                               <button type="button" class="btn editable-cancel"><i
-                                                                       class="icon-remove"></i></button>
-                                                           </div>
-                                                       </div>
-                                                       <div class="editable-error-block help-block"
-                                                            style="display: none;"></div>
-                                                   </div>
-                                               </form>
-                                           </div>
-                                       </td>
-
-                                   </tr>
-                                   <tr>
-                                       <td>Обращение</td>
-                                       <td><div class="editable-container editable-inline">
-                                           <div class="editableform-loading" style="width: 25px; display: none;"></div>
-                                           <form class="form-inline editableform" style="">
-                                               <div class="control-group">
-                                                   <div>
-                                                       <div class="editable-input"><select class="input-medium">
-                                                           <option value="1">Уважаемый</option>
-                                                           <option value="2">Уважаемая</option>
-
-                                                       </select></div>
-                                                       <div class="editable-buttons">
-                                                           <button type="submit" class="btn editable-submit">
-                                                               <i class="icon-ok icon-white"></i></button>
-                                                           <button type="button" class="btn editable-cancel"><i class="icon-remove"></i></button>
-                                                       </div>
-                                                   </div>
-                                                   <div class="editable-error-block help-block" style="display: none;"></div>
-                                               </div>
-                                           </form>
-                                       </div></td>
-                                       <td>Пароль</td>
-                                       <td><a href="#" class="editable editable-click">Изменить пароль</a></td>
-                                   </tr>
-                                   </tbody>
-                                </table>
-                            </div>
-                        </div>
-
-                    </div>
+                    <div id="gmaps-error"></div>
                 </div>
-            </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="table">
+        <tbody>
+        <tr>
+            <td>Страна</td>
+            <td>
+                 <a href="#" class="editable editable-click" style="display: none;">добавить</a>
+                 <!--<div class="editable-container editable-inline">-->
+                                <!--<div class="editableform-loading" style="width: 25px; display: none;"></div>-->
+                                <!--<form class="form-inline editableform" style="">-->
+                                    <!--<div class="control-group">-->
+                                        <!--<div>-->
+                                            <!--<div class="editable-input"><input type="text"-->
+                                                                               <!--class="input-medium"></div>-->
+                                            <!--<div class="editable-buttons">-->
+                                                <!--<button type="submit" class="btn btn-primary editable-submit">-->
+                                                    <!--<i class="icon-ok icon-white"></i></button>-->
+                                                <!--<button type="button" class="btn editable-cancel"><i-->
+                                                        <!--class="icon-remove"></i></button>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                        <!--<div class="editable-error-block help-block"-->
+                                             <!--style="display: none;"></div>-->
+                                    <!--</div>-->
+                                <!--</form>-->
+                    <!--</div>-->
+              </td>
+            <td>Улица</td>
+            <td><a href="#" class="editable editable-click">добавить</a></td>
+        </tr>
+
+        <tr>
+           <td>Область</td>
+           <td><a href="#" class="editable editable-click">Киевская</a></td>
+            <td>Дом</td>
+            <td><a href="#" class="editable editable-click">добавить</a></td>
+        </tr>
+
+        <tr>
+           <td>Населенный пункт</td>
+           <td><a href="#" class="editable editable-click">Киевский</a></td>
+            <td>Офис</td>
+            <td><a href="#" class="editable editable-click">добавить</a></td>
+        </tr>
+
+        <tr>
+          <td>Почтовый индекс</td>
+          <td><a href="#" class="editable editable-click">123456</a></td>
+        </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+
+</div>
+<div class="span7">
+<div class="row-fluid">
+    <div class="span12 listOfEmployees">
+        <h4 class="title-h3">Полный список сотрудников <i class="vopros"></i></h4>
+
+        <div class="tables-cont">
+
+            <table class="items table table-condensed">
+                <thead>
+                <tr>
+                    <th rowspan="2"></th>
+                    <th>ФИО Cотрудника</th>
+
+                    <th style="text-align: center">Менеджер</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="selected">
+
+                    <td width="80px">
+                        <a class="delete_user" data-id="674" href="#">
+                            <i class="ic-close"></i>
+                        </a>
+                        <a data-id="674" class="edit_user" onclick="{return false;}" href="#">
+                            <i class="ic-edit"></i>
+                        </a>
+                    </td>
+                    <td width="250px">Иванов Иван Иванович</td>
+
+                    <td style="text-align: center">
+                        <a style="cursor: pointer; text-decoration: underline;" class="changeurole" href="#">
+                            <span class="btn btn-mini label-click">Снять</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td width="80px">
+                        <a class="delete_user" data-id="674" href="#">
+                            <i class="ic-close"></i>
+                        </a>
+                        <a data-id="674" class="edit_user" onclick="{return false;}" href="#">
+                            <i class="ic-edit"></i>
+                        </a>
+                    </td>
+                    <td width="250px">Иванов Иван Иванович</td>
+
+                    <td style="text-align: center">
+                        <a style="cursor: pointer; text-decoration: underline;" class="changeurole" href="#">
+                            <span class="btn btn-mini label-click">Снять</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td width="80px">
+                        <a class="delete_user" data-id="674" href="#">
+                            <i class="ic-close"></i>
+                        </a>
+                        <a data-id="674" class="edit_user" onclick="{return false;}" href="#">
+                            <i class="ic-edit"></i>
+                        </a>
+                    </td>
+                    <td >Иванов Иван Иванович</td>
+
+                    <td width="100px" style="text-align: center">
+                        <a style="cursor: pointer; text-decoration: underline;" class="changeurole" href="#">
+                            <span class="btn btn-mini label-click">Снять</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td width="80px">
+                        <a class="delete_user" data-id="674" href="#">
+                            <i class="ic-close"></i>
+                        </a>
+                        <a data-id="674" class="edit_user" onclick="{return false;}" href="#">
+                            <i class="ic-edit"></i>
+                        </a>
+                    </td>
+                    <td >Иванов Иван Иванович</td>
+
+                    <td width="100px" style="text-align: center">
+                        <a style="cursor: pointer; text-decoration: underline;" class="changeurole" href="#">
+                            <span class="btn btn-mini label-click">Снять</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td width="80px">
+                        <a class="delete_user" data-id="674" href="#">
+                            <i class="ic-close"></i>
+                        </a>
+                        <a data-id="674" class="edit_user" onclick="{return false;}" href="#">
+                            <i class="ic-edit"></i>
+                        </a>
+                    </td>
+                    <td>Иванов Иван Иванович</td>
+
+                    <td width="100px" style="text-align: center">
+                        <a style="cursor: pointer; text-decoration: underline;" class="changeurole" href="#">
+                            <span class="btn btn-mini label-click">Снять</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td width="80px">
+                        <a class="delete_user" data-id="674" href="#">
+                            <i class="ic-close"></i>
+                        </a>
+                        <a data-id="674" class="edit_user" onclick="{return false;}" href="#">
+                            <i class="ic-edit"></i>
+                        </a>
+                    </td>
+                    <td>Иванов Иван Иванович</td>
+
+                    <td width="100px" style="text-align: center">
+                        <a style="cursor: pointer; text-decoration: underline;" class="changeurole" href="#">
+                            <span class="btn btn-mini label-click">Снять</span>
+                        </a>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
         </div>
     </div>
+</div>
+<div class="row-fluid">
+    <div class="span12">
+        <button type="submit" class="btn text-submit class-margin click-script-submit">Добавить сотрудника в список
+        </button>
+    </div>
+</div>
+<div class="row-fluid">
+    <div class="span12 user-data-widget">
+        <h4 class="title-h3">Персональные данные сотрудника</h4>
+
+        <form class="bs-docs-example  form-horizontal">
+            <div class="row-fluid">
+                <div class="span6">
+                    <div class="control-group">
+                        <label class="control-label">Обращение</label>
+
+                        <div class="controls">
+                            <select>
+                                <option>Уважаемый</option>
+                                <option>Уважаемая</option>
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <div class="control-group ">
+                        <label class="control-label" for="Famile">Фамилия</label>
+
+                        <div class="controls">
+                            <input type="text" id="Famile" placeholder="Фамилия">
+                        </div>
+
+                    </div>
+                    <div class="control-group ">
+                        <label class="control-label" for="name">Имя и отчество</label>
+
+                        <div class="controls">
+                            <input type="text" id="name" placeholder="Имя и отчество">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="controls">
+                            <button type="submit" class="btn text-submit">Добавить сотрудника в список</button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="span6">
+
+
+                    <div class="control-group">
+                        <label class="control-label inputEmail" for="inputEmail">Адрес e-mail</label>
+
+                        <div class="controls">
+                            <input type="text" id="inputEmail" placeholder="Адрес e-mail">
+                        </div>
+                    </div>
+                    <div class="control-group ">
+                        <label class="control-label" for="username">Имя для входа</label>
+
+                        <div class="controls">
+                            <input type="text" id="username" placeholder="Имя для входа">
+                        </div>
+
+                    </div>
+                    <div class="control-group ">
+                        <label class="control-label" for="inputPassword">Пароль</label>
+
+                        <div class="controls">
+                            <input type="password" id="inputPassword" placeholder="Пароль">
+                        </div>
+                    </div>
+                    <div class="control-group ">
+                        <label class="control-label" for="inputNextPassword">Повтор пароля</label>
+
+                        <div class="controls">
+                            <input type="password" id="inputNextPassword" placeholder="Пароль">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+<div class="row-fluid">
+    <div class="span12 edit-user-widget">
+        <table class="table">
+            <tbody>
+            <tr>
+                <td width="95px">Фамилия</td>
+                <td><a href="#" class="editable editable-click" style="display: none">Иванов</a>
+
+                    <div class="editable-container editable-inline">
+                        <div class="editableform-loading" style="width: 25px; display: none;"></div>
+                        <form class="form-inline editableform" style="">
+                            <div class="control-group">
+                                <div>
+                                    <div class="editable-input"><input type="text"
+                                                                       class="input-medium"></div>
+                                    <div class="editable-buttons">
+                                        <button type="submit" class="btn btn-primary editable-submit">
+                                            <i class="icon-ok icon-white"></i></button>
+                                        <button type="button" class="btn editable-cancel"><i
+                                                class="icon-remove"></i></button>
+                                    </div>
+                                </div>
+                                <div class="editable-error-block help-block"
+                                     style="display: none;"></div>
+                            </div>
+                        </form>
+                    </div>
+                </td>
+                <td>Имя для входа</td>
+                <td><a href="#" class="editable editable-click">ivanov@mail.com</a></td>
+
+            </tr>
+            <tr>
+                <td>Имя и отчество</td>
+                <td><a href="#" class="editable editable-click">Иван Иванович</a></td>
+                <td>Адрес e-mail</td>
+                <td><a href="#" class="editable editable-click" style="display: none">ivanov@mail.com</a>
+
+                    <div class="editable-container editable-inline">
+                        <div class="editableform-loading" style="width: 25px; display: none;"></div>
+                        <form class="form-inline editableform" style="">
+                            <div class="control-group">
+                                <div>
+                                    <div class="editable-input"><input type="text"
+                                                                       class="input-medium"></div>
+                                    <div class="editable-buttons">
+                                        <button type="submit" class="btn btn-primary editable-submit">
+                                            <i class="icon-ok icon-white"></i></button>
+                                        <button type="button" class="btn editable-cancel"><i
+                                                class="icon-remove"></i></button>
+                                    </div>
+                                </div>
+                                <div class="editable-error-block help-block"
+                                     style="display: none;"></div>
+                            </div>
+                        </form>
+                    </div>
+                </td>
+
+            </tr>
+            <tr>
+                <td>Обращение</td>
+                <td>
+                    <div class="editable-container editable-inline">
+                        <div class="editableform-loading" style="width: 25px; display: none;"></div>
+                        <form class="form-inline editableform" style="">
+                            <div class="control-group">
+                                <div>
+                                    <div class="editable-input"><select class="input-medium">
+                                        <option value="1">Уважаемый</option>
+                                        <option value="2">Уважаемая</option>
+
+                                    </select></div>
+                                    <div class="editable-buttons">
+                                        <button type="submit" class="btn editable-submit">
+                                            <i class="icon-ok icon-white"></i></button>
+                                        <button type="button" class="btn editable-cancel"><i class="icon-remove"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="editable-error-block help-block" style="display: none;"></div>
+                            </div>
+                        </form>
+                    </div>
+                </td>
+                <td>Пароль</td>
+                <td><a href="#" class="editable editable-click">Изменить пароль</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
 
 </section>
 <!-- #middle-->
